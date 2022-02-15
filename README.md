@@ -1,4 +1,6 @@
-Scans PDF document, looks for image xObjects and saves them all.
+Extracts images from PDF as it is.
+
+It will not recompress image if it is already compressed. But if it is plain, then saves it as .jpg.
 
 # Requirements #
   - Python3.6+
