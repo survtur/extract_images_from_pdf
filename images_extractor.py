@@ -104,10 +104,3 @@ class ImagesExtractor:
         if isinstance(obj, dict):
             for v in obj.keys():
                 self._work_obj(obj[v])
-
-
-if __name__ == '__main__':
-    __test = ImagesExtractor()
-    DIR_WITH_PDFS = "/home/ac/Downloads/Untitled Folder"
-    SAVE_IMAGES_HERE =  "/home/ac/Downloads/Untitled Folder/test"
-    __test.extract_dir(DIR_WITH_PDFS, SAVE_IMAGES_HERE)
