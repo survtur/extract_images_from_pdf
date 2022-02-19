@@ -86,6 +86,7 @@ class ImagesExtractor:
             img = Image.frombytes(mode, size, data)
             full_name = full_name_wo_ext + ".jpg"
             img.save(full_name, quality=95)
+            img.close()
         elif filter_ in self._FILTER_TO_EXTENSION:
             ext = self._FILTER_TO_EXTENSION[filter_]
             full_name = full_name_wo_ext + ext
